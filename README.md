@@ -44,7 +44,7 @@ This project is licensed under the MIT License.
 
 **Malvin King (XdKing2)**
 
-- GitHub: [@XdKing2](https://github.com/XdKing2)
+- GitHub: [@fixoxd](https://github.com/fixoxd20)
 - WhatsApp Channel: [Join Channel](https://whatsapp.com/channel/0029VbAbJCO35fLy2OzH9y1I)
 
 ## 💬 Support
@@ -55,9 +55,9 @@ For support, join our [WhatsApp Channel](https://whatsapp.com/channel/0029VbAbJC
 
 <div align="center">
 
-**© 2025 Free Mini. Powered by Malvin Tech. All rights reserved.**
+**© 2025 Bela Mini. Powered by Fixo Xd. All rights reserved.**
 
-Made with ❤️ by Malvin King
+Made with ❤️ Fixo Xd and Cyber X Thenula 
 
 </div>
 
