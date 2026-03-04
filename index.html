@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BELA MINI - GREEN EDITION</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-green: #00ff88;
+      --dark-green: #004d2c;
+      --glow-green: rgba(0, 255, 136, 0.4);
+      --bg-dark: #0a0f0d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: var(--bg-dark);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Anime Background Overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(10, 15, 13, 0.8), rgba(10, 15, 13, 0.8)),
+                  url('https://images.alphacoders.com/132/1329606.jpeg'); /* High quality green anime girl aesthetic */
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+    }
+
+    /* Green Particles/Bubbles animation */
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      width: 10px;
+      height: 10px;
+      background: var(--primary-green);
+      border-radius: 50%;
+      filter: blur(2px);
+      box-shadow: 0 0 10px var(--primary-green);
+      animation: rise 10s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes rise {
+      0% { transform: translateY(0) scale(1); opacity: 0; }
+      20% { opacity: 0.6; }
+      100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      z-index: 10;
+      width: 100%;
+    }
+
+    .box {
+      width: 100%;
+      max-width: 380px;
+      padding: 40px 30px;
+      background: rgba(0, 20, 10, 0.75);
+      border-radius: 24px;
+      backdrop-filter: blur(15px);
+      border: 2px solid var(--primary-green);
+      box-shadow: 0 0 30px var(--glow-green);
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 50px var(--primary-green);
+    }
+
+    .icon-box {
+      background: rgba(0, 255, 136, 0.1);
+      width: 70px;
+      height: 70px;
+      line-height: 75px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      border: 1px solid var(--primary-green);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(0, 255, 136, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+    }
+
+    .centered-text { 
+      color: #fff; 
+      font-size: 1.6rem; 
+      margin-bottom: 5px; 
+      font-weight: 700;
+      text-shadow: 0 0 10px var(--primary-green);
+    }
+
+    h4 { 
+      color: var(--primary-green); 
+      margin-bottom: 10px; 
+      letter-spacing: 2px;
+      font-size: 1rem;
+    }
+
+    h6 { color: rgba(255, 255, 255, 0.5); margin-bottom: 25px; font-size: 0.8rem; }
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+
+    .input-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .input-wrapper input {
+      width: 100%;
+      padding: 15px 15px 15px 45px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(0, 255, 136, 0.3);
+      border-radius: 12px;
+      color: #fff;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .input-wrapper i {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--primary-green);
+    }
+
+    .input-wrapper input:focus {
+      border-color: var(--primary-green);
+      background: rgba(0, 255, 136, 0.05);
+      outline: none;
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+    }
+
+    button#submit {
+      padding: 15px;
+      background: var(--primary-green);
+      border: none;
+      border-radius: 12px;
+      color: #000;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+    }
+
+    button#submit:hover {
+      background: #fff;
+      transform: scale(1.02);
+      box-shadow: 0 0 20px var(--primary-green);
+    }
+
+    #pair { margin-top: 25px; min-height: 40px; }
+    
+    #copy { 
+        cursor: pointer; 
+        color: var(--primary-green); 
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        border: 1px dashed var(--primary-green);
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    #copy:hover {
+        background: rgba(0, 255, 136, 0.1);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 400px) {
+      .box { padding: 30px 20px; }
+      .centered-text { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Green Particles -->
+  <div class="bubble" style="left: 5%; animation-duration: 8s;"></div>
+  <div class="bubble" style="left: 15%; animation-duration: 12s; width: 15px; height: 15px;"></div>
+  <div class="bubble" style="left: 25%; animation-duration: 10s;"></div>
+  <div class="bubble" style="left: 45%; animation-duration: 14s; width: 8px; height: 8px;"></div>
+  <div class="bubble" style="left: 65%; animation-duration: 9s;"></div>
+  <div class="bubble" style="left: 85%; animation-duration: 11s; width: 12px; height: 12px;"></div>
+  <div class="bubble" style="left: 95%; animation-duration: 15s;"></div>
+
+  <div class="container">
+      <div class="box" id="box">
+        <div id="text">
+          <div class="icon-box">
+            <i class="fab fa-whatsapp" style="font-size: 2.5rem; color: var(--primary-green); vertical-align: middle;"></i>
+          </div>
+          <h3 class="centered-text">Pairing Code</h3>
+          <h4>BELA-MINI V2</h4>
+          <h6>Secure WhatsApp Connection</h6>
+          
+          <div class="input-container">
+            <div class="input-wrapper">
+                <i class="fas fa-phone-alt"></i>
+                <input placeholder="947xxxxxxxx" type="number" id="number">
+            </div>
+            <button id="submit">Get Link Code</button>
+          </div>
+          
+          <div id="pair"></div>
+        </div>
+      </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+  <script>
+    let a = document.getElementById("pair");
+    let b = document.getElementById("submit");
+    let c = document.getElementById("number");
+
+    async function Copy() {
+      let text = document.getElementById("copy").innerText;
+      let obj = document.getElementById("copy");
+      // Use execCommand for broader compatibility in some webview environments
+      const tempInput = document.createElement("input");
+      tempInput.value = obj.innerText.replace('CODE: ', '');
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+      
+      obj.innerHTML = "COPIED ✅";
+      obj.style = "color:#fff; font-weight:bold; background: #00ff88; border-color: #fff;";
+      setTimeout(() => {
+        obj.innerHTML = text;
+        obj.style = "";
+      }, 1000);
+    }
+
+    b.addEventListener("click", async (e) => {
+      e.preventDefault();
+      if (!c.value) {
+        a.innerHTML = '<span style="color:#ff4444; font-size: 0.9rem;">❗ Enter your number with country code.</span>';
+      } else if (c.value.replace(/[^0-9]/g, "").length < 10) {
+        a.innerHTML = '<span style="color:#ff4444; font-size: 0.9rem;">❌ Invalid number format ❌</span>';
+      } else {
+        const bc = c.value.replace(/[^0-9]/g, "");
+        a.innerHTML = '<div style="color:var(--primary-green)"><i class="fas fa-circle-notch fa-spin"></i> Generating code...</div>';
+        
+        try {
+          // Note: axios URL depends on your backend deployment
+          let { data } = await axios(`/code?number=${bc}`);
+          let code = data.code || "FAILED";
+          
+          if(code === "FAILED") {
+             a.innerHTML = '<span style="color:#ff4444">Service Busy. Try again later.</span>';
+          } else {
+             a.innerHTML = '<div id="copy" onclick="Copy()"><span style="font-size: 0.8rem; display:block; opacity: 0.8; margin-bottom: 5px;">TAP TO COPY</span><span style="font-size: 1.5rem; letter-spacing: 5px; font-weight: 800;">' + code + '</span></div>';
+          }
+        } catch (error) {
+          a.innerHTML = '<span style="color:#ff4444">❌ Connection Error ❌</span>';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
