@@ -11,7 +11,7 @@
     "@octokit/rest": "^20.0.2",
     "axios": "^1.2.5",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
-    "baileys": "github:dew-coders/Dew-Baileys",
+    "baileys": "npm:@whiskeysockets/baileys",
     "cheerio": "1.1.0",
     "denethdev-ytmp3": "1.0.3",
      "fluent-ffmpeg": "^2.1.3",
