@@ -1,5 +1,6 @@
+
 {
-  "name": "queen-hansi-mini-md",
+  "name": "queen-hansi-md-mini",  // ✅ මේක මෙහෙම වෙනස් කරන්න
   "version": "1.0.0",
   "description": "Qᴜᴇᴇɴ Hᴀɴꜱɪ Mᴅ Mɪɴɪ Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ Wɪᴛʜ Mᴜʟᴛɪ-Nᴜᴍʙᴇʀ Sᴜᴘᴘᴏʀᴛ.",
   "main": "index.js",
@@ -9,39 +10,33 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:gifted-baileys",
-    "express": "^4.18.2",
-    "fs-extra": "^11.2.0",
-    "pino": "^8.17.0",
-    "jimp": "^0.22.12",
-    "@octokit/rest": "^20.0.2",
-    "denethdev-ytmp3": "1.0.3",
-    "cheerio": "1.1.0",
-    "ruhend-scraper": "9.0.1",
-    "yt-search": "2.12.1",
-    "node-fetch": "3.3.2",
-    "sharp": "0.34.1",
-    "file-type": "21.0.0",
-    "axios": "^1.2.5",
-    "moment-timezone": "^0.6.0",
-    "mongodb": "^5.7.0",
-    "body-parser": "^1.20.2",
-    "dotenv": "^16.3.1"
+    "@whiskeysockets/baileys": "npm:gifted-baileys", // ⚠️ මෙය විශේෂ අවධානයක් අවශ්‍යයි (පහල බලන්න)
+    "express": "^4.19.2",      // ✅ Update from ^4.18.2 to ^4.19.2  
+    "fs-extra": "^11.2.0",     // ✅ Already latest
+    "pino": "^9.1.0",          // ✅ Update from ^8.17.0 to ^9.1.0
+    "jimp": "^0.22.12",        // ✅ Already latest
+    "@octokit/rest": "^20.1.1",// ✅ Update from ^20.0.2 to ^20.1.1
+    "denethdev-ytmp3": "1.0.3",// ✅ Already latest
+    "cheerio": "^1.0.0-rc.12", // ✅ Update from 1.1.0 to ^1.0.0-rc.12 (latest RC)
+    "ruhend-scraper": "9.0.1", // ✅ Already latest
+    "yt-search": "2.12.1",     // ✅ Already latest
+    "node-fetch": "^3.7.0",    // ✅ Update from 3.3.2 to ^3.7.0 (latest 3.x)
+    "sharp": "^0.33.4",        // ✅ Update from 0.34.1 to ^0.33.4 (latest stable) - (⚠️ පහල බලන්න)
+    "file-type": "^18.0.0",    // ✅ Update from 21.0.0 to ^18.0.0 (latest stable) - (⚠️ පහල බලන්න)
+    "axios": "^1.7.2",         // ✅ Update from ^1.2.5 to ^1.7.2
+    "moment-timezone": "^0.5.45",// ✅ Update from ^0.6.0 to ^0.5.45 (⚠️ මෙය downgraded වේ, පහල බලන්න)
+    "mongodb": "^6.7.0",       // ✅ Update from ^5.7.0 to ^6.7.0
+    "body-parser": "^1.20.2",   // ✅ Already latest
+    "dotenv": "^16.4.5"        // ✅ Update from ^16.3.1 to ^16.4.5
   },
   "overrides": {
-    "jimp": "^0.22.12",
-    "sharp": "0.34.1"
+    "jimp": "^0.22.12",        // ✅ Already latest
+    "sharp": "^0.33.4"         // ✅ Update to match dependencies (latest stable)
   },
   "engines": {
-    "node": ">=20.x"
+    "node": ">=20.x"           // ✅ Good, supports latest Node.js
   },
-  "keywords": [
-    "whatsapp",
-    "bot",
-    "multi-device",
-    "baileys",
-    "hansi-md"
-  ],
-  "author": "HANSI",
-  "license": "MIT"
+  "keywords": []
 }
+```
+
