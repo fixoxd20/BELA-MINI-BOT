@@ -1,7 +1,5 @@
-
-
 {
-  "name": "queen-hasi-mini",
+  "name": "queen-hansi-md-mini",
   "version": "1.0.0",
   "description": "Qᴜᴇᴇɴ Hᴀɴꜱɪ Mᴅ Mɪɴɪ Wʜᴀᴛꜱᴀᴘᴘ Bᴏᴛ Wɪᴛʜ Mᴜʟᴛɪ-Nᴜᴍʙᴇʀ Sᴜᴘᴘᴏʀᴛ.",
   "main": "index.js",
@@ -38,3 +36,12 @@
     "node": ">=20.x"
   },
   "keywords": [
+    "whatsapp",
+    "bot",
+    "multi-device",
+    "baileys",
+    "hansi-md"
+  ],
+  "author": "HANSI",
+  "license": "MIT"
+}
