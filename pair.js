@@ -36,9 +36,9 @@ const config = {
   AUTO_LIKE_EMOJI: ['🩷','🧡','💛','💚','💙','🩵','💜','🤎','🖤','🩶','❤️'],
   PREFIX: '.',
   MAX_RETRIES: 3,
-  GROUP_INVITE_LINK: 'https://chat.whatsapp.com/D1dokaMwvd01U98f8qdPM1',
-  RCD_IMAGE_PATH: 'https://i.ibb.co/8L0XDHPY/IMG-20260130-WA0036.jpg',
-  NEWSLETTER_JID: '120363406870482392@newsletter',
+  GROUP_INVITE_LINK: 'https://chat.whatsapp.com/IUdZekXTMq63jG6T3TOBvQ?mode=gi_t',
+  RCD_IMAGE_PATH: 'https://files.catbox.moe/i4esg2.png',
+  NEWSLETTER_JID: '120363420828095666@newsletter',
   OTP_EXPIRY: 300000,
   OWNER_NUMBER: process.env.OWNER_NUMBER || '94703945265',
   CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbAbJCO35fLy2OzH9y1I',
@@ -589,7 +589,7 @@ case 'pair': {
 
     if (!number) {
         return await socket.sendMessage(sender, {
-            text: '*📌 Usage:* .pair +9476066XXXX'
+            text: '*📌 Usage:* .pair +9470394XXXX'
         }, { quoted: msg });
     }
 
